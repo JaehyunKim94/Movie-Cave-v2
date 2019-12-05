@@ -1,5 +1,6 @@
 <template>
   <v-col class="home">
+    <h1>Movie List</h1>
     <MovieList :movies="movies"/>
   </v-col>
 </template>
@@ -54,7 +55,7 @@ export default {
       })
     }, // end of addMovies()
 
-  }, // end of methods
+  },
 
   watch: {
     bottom(bottom) {
