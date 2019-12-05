@@ -4,7 +4,6 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Signup from '../views/Signup.vue'
 import Profile from '../views/Profile.vue'
-import Worldcup from '../views/Worldcup.vue'
 
 Vue.use(VueRouter)
 
@@ -29,11 +28,6 @@ const routes = [
     name: 'profile',
     component: Profile
   },
-  {
-    path: '/worldcup',
-    name: 'worldcup',
-    component: Worldcup
-  }
 ]
 
 const router = new VueRouter({

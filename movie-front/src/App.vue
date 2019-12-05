@@ -14,15 +14,6 @@
             <v-list-item-title>Movie List</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link to="/worldcup">
-          <v-list-item-action>
-            <v-icon>mdi-alpha-w-box</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>World Cup</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
         <v-list-item link to="/profile">
           <v-list-item-action>
             <v-icon>mdi-account</v-icon>
@@ -86,7 +77,7 @@
     </v-content>
 
     <v-footer app>
-      <span>&copy; 2019 Y2GB</span>
+      <span>&copy; 2019.v2</span>
     </v-footer>
   </v-app>
 </template>

@@ -1,6 +1,5 @@
 <template>
   <v-col class="home">
-    <!-- <h1>Movie List</h1> -->
     <MovieList :movies="movies"/>
   </v-col>
 </template>
@@ -8,8 +7,9 @@
 <script>
 // @ is an alias to /src
 import MovieList from '@/components/MovieList.vue'
-// import router from '@/router'
+import router from '@/router'
 import axios from 'axios'
+import { mapGetters } from 'vuex'
 
 
 export default {
@@ -64,12 +64,24 @@ export default {
     }
   },
 
+  computed: {
+    ...mapGetters(['isLoggedIn'])
+  }
+  ,
+
   created() {
    window.addEventListener('scroll', () => {
      this.bottom = this.bottomVisible()
    })
    this.addMovies()
    this.page_num++
+  },
+  mounted() {
+    if (this.isLoggedIn) {
+      this.getInfo()
+    } else{
+      router.push('/login')
+    }
   }
 
 }
