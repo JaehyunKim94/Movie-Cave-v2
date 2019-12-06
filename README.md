@@ -1,11 +1,11 @@
 # Project Movie Cave - version 2
 
-## 1. At version 1
+## 1. Introduction
 
-1. Seed data crowling
-   1. `movie.naver.com` 의 평점순 영화랭킹(현재 상영영화 + 모든 영화)을 기준으로 7일 간격 50주간의 데이터(영화이름 & 영화코드)를 수집
-   2. 수집된 데이터를 [NAVER 영화 검색 API](https://developers.naver.com/docs/search/movie/) 와 네이버 영화 상세보기 페이지의 크롤링을 통해 Seed data를 수집
-   3. 수집된 데이터는 각각 `movies.json`, `directors.json`, `genre.json`, `actors.json` 파일로 저장됨
-2. Django Rest Framework
-3. Vue & Vuetify
+1. [Project Movie Cave - version 1](https://github.com/Kuhnhee/Movie-Cave-Project)
 
+   Project Movie Cave는 웹 프레임워크를 활용한 영화 추천 서비스로 다양한 영화 정보를 제공한다. 사용자는 영화에 대한 리뷰를 남길 수 있으며, 영화 이상형 월드컵과 영화에 대해 사용자가 매긴 평점을 통해 선호하는 장르를 파악하여 영화를 추천해주는 서비스이다.
+
+2. What's difference
+
+   
