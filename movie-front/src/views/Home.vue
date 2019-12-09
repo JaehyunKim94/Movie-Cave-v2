@@ -1,6 +1,5 @@
 <template>
   <v-col class="home">
-    <h1>Movie List</h1>
     <MovieList :movies="movies"/>
   </v-col>
 </template>
